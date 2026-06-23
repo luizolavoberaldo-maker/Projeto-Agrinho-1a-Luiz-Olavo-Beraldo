@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Futuro Sustentável - Plataforma 2050</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #050a08;
+    color: #d8ffe9;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #00ff88, #007744);
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* MENU */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background: #06140d;
+    padding: 10px;
+}
+
+nav button {
+    background: transparent;
+    border: 1px solid #00ff99;
+    color: #00ff99;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+nav button:hover {
+    background: #00ff99;
+    color: black;
+}
+
+/* PÁGINAS */
+.page {
+    display: none;
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.active {
+    display: block;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: rgba(0,255,150,0.05);
+    border: 1px solid rgba(0,255,150,0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #00ff99;
+}
+
+/* INPUT */
+input {
+    width: 70%;
+    padding: 10px;
+}
+
+button.search {
+    padding: 10px;
+    background: #00ff99;
+    border: none;
+    cursor: pointer;
+}
+
+/* RESULTADOS */
+.result {
+    background: rgba(255,255,255,0.05);
+    margin-top: 10px;
+    padding: 10px;
+    border-left: 3px solid #00ff99;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020705;
+    color: #66ffcc;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌍 Futuro Sustentável 2026</h1>
+    <p>Uma plataforma educacional sobre o futuro do planeta</p>
+</header>
+
+<nav>
+    <button onclick="showPage('home')">🏠 Início</button>
+    <button onclick="showPage('conceitos')">🌱 Conceitos</button>
+    <button onclick="showPage('tecnologias')">⚡ Tecnologias</button>
+    <button onclick="showPage('educacao')">📚 Educação</button>
+    <button onclick="showPage('pesquisa')">🔍 Pesquisa</button>
+    <button onclick="showPage('impacto')">📊 Impacto</button>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="page active">
+    <h2>🏠 Bem-vindo ao Futuro Sustentável</h2>
+
+    <p>
+        como o mundo pode evoluir para um modelo sustentável até 2050.
+    </p>
+
+    <p>
+        Sustentabilidade significa viver hoje sem destruir a capacidade das próximas gerações
+        de viverem no planeta. Isso envolve energia limpa, educação ambiental,
+        tecnologia inteligente e mudanças de comportamento global.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🌍 Missão</h3>
+            <p>Ensinar como proteger o planeta usando tecnologia e conhecimento.</p>
+        </div>
+
+        <div class="card">
+            <h3>🤖 Futuro</h3>
+            <p>IA e ciência ajudando a reduzir poluição e desperdício.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Objetivo</h3>
+            <p>Um planeta equilibrado entre natureza e desenvolvimento humano.</p>
+        </div>
+    </div>
+</div>
+
+<!-- CONCEITOS -->
+<div id="conceitos" class="page">
+    <h2>🌱 Conceitos Fundamentais</h2>
+
+    <p><b>Sustentabilidade:</b> uso responsável dos recursos naturais.</p>
+    <p><b>Ecossistema:</b> interação entre seres vivos e ambiente.</p>
+    <p><b>Pegada de carbono:</b> impacto humano na emissão de CO₂.</p>
+    <p><b>Energia renovável:</b> fontes que não se esgotam.</p>
+
+    <div class="cards">
+        <div class="card">♻️ Reciclagem reduz lixo global</div>
+        <div class="card">🌳 Florestas regulam o clima</div>
+        <div class="card">💧 Água é recurso limitado</div>
+    </div>
+</div>
+
+<!-- TECNOLOGIAS -->
+<div id="tecnologias" class="page">
+    <h2>⚡ Tecnologias Sustentáveis</h2>
+
+    <p>
+        A tecnologia é uma das maiores aliadas do planeta quando usada corretamente.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>☀️ Energia Solar</h3>
+            <p>Transforma luz do sol em eletricidade limpa.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌬️ Energia Eólica</h3>
+            <p>Usa vento para gerar energia sem poluição.</p>
+        </div>
+
+        <div class="card">
+            <h3>🤖 Inteligência Artificial</h3>
+            <p>Ajuda a prever desastres ambientais e otimizar recursos.</p>
+        </div>
+    </div>
+</div>
+
+<!-- EDUCAÇÃO -->
+<div id="educacao" class="page">
+    <h2>📚 Educação Ambiental</h2>
+
+    <p>
+        A educação ambiental ensina pessoas a cuidarem do planeta desde cedo.
+    </p>
+
+    <div class="cards">
+        <div class="card">🚲 Usar transporte sustentável</div>
+        <div class="card">🚯 Evitar desperdício</div>
+        <div class="card">🌿 Plantar árvores</div>
+    </div>
+</div>
+
+<!-- PESQUISA -->
+<div id="pesquisa" class="page">
+    <h2>🔍 Biblioteca Viva</h2>
+
+    <p>Pesquise qualquer tema ambiental:</p>
+
+    <input type="text" id="search">
+    <button class="search" onclick="buscar()">Buscar</button>
+
+    <div id="results"></div>
+</div>
+
+<!-- IMPACTO -->
+<div id="impacto" class="page">
+    <h2>📊 Impacto do Planeta</h2>
+
+    <p>
+        O planeta enfrenta desafios críticos:
+    </p>
+
+    <div class="cards">
+        <div class="card">🌡️ Aquecimento global crescente</div>
+        <div class="card">🌊 Derretimento de geleiras</div>
+        <div class="card">🌪️ Eventos climáticos extremos</div>
+        <div class="card">🐾 Perda de biodiversidade</div>
+    </div>
+</div>
+
+<footer>
+    🌍 Futuro Sustentável 2050 — Plataforma Educacional Interativa
+</footer>
+
+<script>
+function showPage(page) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(page).classList.add('active');
+}
+
+async function buscar() {
+    let query = document.getElementById("search").value;
+
+    const url = `https://pt.wikipedia.org/w/api.php?action=query&list=search&srsearch=${query}&format=json&origin=*`;
+
+    const res = await fetch(url);
+    const data = await res.json();
+
+    let container = document.getElementById("results");
+    container.innerHTML = "";
+
+    data.query.search.forEach(item => {
+        let div = document.createElement("div");
+        div.className = "result";
+
+        let link = `https://pt.wikipedia.org/wiki/${item.title.replaceAll(" ", "_")}`;
+
+        div.innerHTML = `
+            <h3>${item.title}</h3>
+            <p>${item.snippet}</p>
+            <small>📚 Fonte: Wikipedia</small><br>
+            <a href="${link}" target="_blank" style="color:#00ff99;">Abrir artigo</a>
+        `;
+
+        container.appendChild(div);
+    });
+}
+</script>
+
+</body>
+</html>
