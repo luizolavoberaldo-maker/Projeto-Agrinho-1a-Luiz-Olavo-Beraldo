@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #050a08;
+    color: #d8ffe9;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #00ff88, #007744);
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* MENU */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background: #06140d;
+    padding: 10px;
+}
+
+nav button {
+    background: transparent;
+    border: 1px solid #00ff99;
+    color: #00ff99;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+nav button:hover {
+    background: #00ff99;
+    color: black;
+}
+
+/* PÁGINAS */
+.page {
+    display: none;
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.active {
+    display: block;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: rgba(0,255,150,0.05);
+    border: 1px solid rgba(0,255,150,0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #00ff99;
+}
+
+/* INPUT */
+input {
+    width: 70%;
+    padding: 10px;
+}
+
+button.search {
+    padding: 10px;
+    background: #00ff99;
+    border: none;
+    cursor: pointer;
+}
+
+/* RESULTADOS */
+.result {
+    background: rgba(255,255,255,0.05);
+    margin-top: 10px;
+    padding: 10px;
+    border-left: 3px solid #00ff99;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020705;
+    color: #66ffcc;
+}
